@@ -16,7 +16,7 @@ while [ $RES -eq "404" ]; do
     -I -w "%{http_code}" \
     -I "http://169.254.169.254/latest/meta-data/spot/termination-time")
 
-  echo "."
+  printf "."
   sleep 1 
 
 done
