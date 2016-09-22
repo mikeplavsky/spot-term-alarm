@@ -17,7 +17,7 @@ while [ $RES -eq "404" ]; do
     -I "http://169.254.169.254/latest/meta-data/spot/termination-time")
 
   printf "."
-  sleep 1 
+  sleep 10 
 
 done
 
