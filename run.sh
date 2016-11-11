@@ -1,3 +1,8 @@
+if [ -z "$1" ]; then
+    echo "please specify phone number for notification."
+    exit -1
+fi
+
 PHONE=$1
 echo $PHONE
 
