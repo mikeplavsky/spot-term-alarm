@@ -1,10 +1,13 @@
+
 if [ -z "$1" ]; then
     echo "please specify phone number for notification."
     exit -1
 fi
 
 PHONE=$1
-echo $PHONE
+echo "setting up " $PHONE
+
+aws configure
 
 INSTANCE=$(curl \
   http://169.254.169.254/latest/meta-data/instance-id)
